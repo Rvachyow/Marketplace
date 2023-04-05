@@ -3,9 +3,7 @@
 	margin: 0px;
 	border: none;
 }
-* {
-    scroll-margin-top: 100px;
-  }
+
 *,
 *::before,
 *::after {
@@ -45,6 +43,9 @@ h2 {
 }
 ul, ul li {
 	list-style: none;
+}
+li {
+    cursor: pointer;
 }
 img {
 	vertical-align: top;

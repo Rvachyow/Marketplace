@@ -4,7 +4,7 @@ export const Card = () => {
     <div className={style.img_card}><img src="./assets/gta.svg" alt="" /></div>
     <div className={style.content}>
       <div className={style.price}>
-        <p><div className={style.price_item}>1 234₽</div></p>
+        <div><div className={style.price_item}>1 234₽</div></div>
         <p className={style.cart}><img src="./assets/card.svg" alt=""/>123</p>
       </div>
       <p>SALE FORTNITE ВБАКСЫ <br /> 1000-13500 VB |XBOX/PC/PS EPIC</p>
