@@ -1,9 +1,10 @@
 import style from "./Main.module.scss";
 import { Slider } from "../../components/Slider/Slider";
-import { Popular } from "../../components/Popular/Popular";
+import { Block } from "../../components/Block/Block";
 export const Main = () => {
+  let arrayTest = new Array(15).fill(null).map((_, i) => i);
   return <div className={style.main}>
     <Slider></Slider>
-    <Popular></Popular>
+    <Block array={arrayTest} title="Популярное сегодня"></Block>
   </div>;
 };

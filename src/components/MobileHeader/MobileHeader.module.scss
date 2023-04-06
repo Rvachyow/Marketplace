@@ -1,0 +1,29 @@
+.mobile_container {
+    padding: 22px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+.line1 {
+    height: 2px;
+    background-color: black;
+    border-radius: 8px;
+    width: 20px;
+}
+.line2 {
+    height: 2px;
+    background-color: black;
+    border-radius: 8px;
+    width: 15px;
+}
+.line3 {
+    height: 2px;
+    background-color: black;
+    border-radius: 8px;
+    width: 10px;
+}

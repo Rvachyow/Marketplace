@@ -1,11 +1,13 @@
 import style from "./Slider.module.scss";
 import { Container } from "../Container/Container";
 import React, { useRef } from "react";
+import useWindowSize from "../../hook/useWindowSize";
 
 export const Slider = () => {
   const [ transform, setTransform ] = React.useState(0);
   const refImg = useRef<any>(null);
   const refContainer = useRef<any>(null);
+  const size = useWindowSize();
 
   const swithHandlerRight = () => {
     setTimeout(() => {
@@ -80,8 +82,12 @@ export const Slider = () => {
           </span>
         </div>
       </div>
-      <button onClick={() => swithHandlerLeft()} className={style.btn_slider_left}><img src="./assets/v.svg" alt="" /></button>
-      <button onClick={() => swithHandlerRight()} className={style.btn_slider_rigth}><img src="./assets/v.svg" alt="" /></button>
+      {size.width <= 530? "" : <><button 
+        onClick={() => swithHandlerLeft()} 
+        className={style.btn_slider_left}><img src="./assets/v.svg" alt="" /></button>
+      <button 
+        onClick={() => swithHandlerRight()} 
+        className={style.btn_slider_rigth}><img src="./assets/v.svg" alt="" /></button></>}
     </Container>
   </div>;
 };

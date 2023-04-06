@@ -92,8 +92,9 @@ legend {
 	display: block;
 }
 body {
-  font-family: 'Raleway', sans-serif;
-  height: 100%;
+  font-family: 'Raleway';
+  min-height: 100vh;
+  block-size: fit-content;
   text-rendering: optimizeSpeed;
   line-height: 20px;
   font-size: 16px;
